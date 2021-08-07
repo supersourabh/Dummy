@@ -127,7 +127,7 @@ materialRouter.post("/create/syllabusUpload", isAuth, isCr, async (req, res) => 
 
 })
 
-materialRouter.post("/view/:id", async (req, res) => {
+materialRouter.post("/view/:id", isAuth, async (req, res) => {
     const id = req.params.id
 
     try {
