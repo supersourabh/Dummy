@@ -71,7 +71,7 @@ export default function SubjectScreen(props) {
                                             <h6>Professor:</h6><b>{ item.professor }</b>
                                         </div>
                                         <div>
-                                            <h6>Date : </h6><b>{ item.data } </b>
+                                            <h6>Date : </h6><b>{ item.date.substring(0,10) } </b>
                                         </div>
                                         <div style={ { flexDirection: "row" } }>
 
