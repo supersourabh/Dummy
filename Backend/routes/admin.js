@@ -39,22 +39,22 @@ adminRouter.post("/adminList/:query/:count", isAuth, isAdmin, async (req, res) =
 
     try {
         if(query === "members"){
-            const members = await Members.find({}).skip(30*count).limit(30)
+            const members = await Members.find({})
             res.send(members)
         }
         else if(query === "crs"){
-            const crs = await Student.find({cr : true}).skip(30*count).limit(30)
+            const crs = await Student.find({cr : true})
             res.send(crs)
 
         }else if(query === "students"){
-            const stds = await Student.find({}).skip(30*count).limit(30)
+            const stds = await Student.find({})
             res.send(stds)
         }else if(query === "material"){
-            const notes = await Notes.find({},{doc : 0}).skip(10*count).limit(10)
+            const notes = await Notes.find({},{doc : 0})
             res.send(notes)
 
         }else if(query === "materialOther"){
-            const other = await Syllabus.find({},{doc : 0}).skip(10*count).limit(10)
+            const other = await Syllabus.find({},{doc : 0})
             res.send(other)
         }else{
             res.status(404).send({message : "please select any one"})
