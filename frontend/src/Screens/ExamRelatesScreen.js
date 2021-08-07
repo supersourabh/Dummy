@@ -74,7 +74,7 @@ export default function ExamRelatesScreen(props) {
                                             </div>
                                         }
                                         <div>
-                                            <h6>Date : </h6><b>{ item.date }.substring(0,10)</b>
+                                            <h6>Date : </h6><b>{ item.date.substring(0,10)}</b>
                                         </div>
                                         <div style={ { flexDirection: "row" } }>
 
