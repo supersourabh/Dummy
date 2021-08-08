@@ -18,8 +18,8 @@ export default function Header(props) {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                 <NavDropdown  title="Developer Team" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="https://wa.me/916362579248"><i style={{color : "green"}} className="fab fa-whatsapp" aria-hidden="true"></i> Sourabh Kotagi</NavDropdown.Item>
-                    <NavDropdown.Item href="https://www.instagram.com/d_e_e_p__s_y_n_c/"><i style={{color : "red"}} className="fab fa-instagram" aria-hidden="true"></i> d_e_e_p__s_y_n_c</NavDropdown.Item>
+                    <NavDropdown.Item  onClick={ (e) => window.open("https://wa.me/916362579248") } ><i style={{color : "green"}} className="fab fa-whatsapp" aria-hidden="true"></i> S K Sourabh</NavDropdown.Item>
+                    <NavDropdown.Item  onClick={ (e) => window.open("https://www.instagram.com/d_e_e_p__s_y_n_c/") } ><i style={{color : "red"}} className="fab fa-instagram" aria-hidden="true"></i> d_e_e_p__s_y_n_c</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown  title=" Material Access" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="/material"><i style={{color:"green"}} class="fas fa-book-reader"></i>  Study Material</NavDropdown.Item>
